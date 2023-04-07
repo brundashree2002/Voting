@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Voter Registration</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <script nonce="803e738b-4b66-4484-8d17-60d67684fcd1">
+        (function(w,d){!function(eK,eL,eM,eN){eK.zarazData=eK.zarazData||{};eK.zarazData.executed=[];eK.zaraz={deferred:[],listeners:[]};eK.zaraz.q=[];eK.zaraz._f=function(eO){return function(){var eP=Array.prototype.slice.call(arguments);eK.zaraz.q.push({m:eO,a:eP})}};for(const eQ of["track","set","debug"])eK.zaraz[eQ]=eK.zaraz._f(eQ);eK.zaraz.init=()=>{var eR=eL.getElementsByTagName(eN)[0],eS=eL.createElement(eN),eT=eL.getElementsByTagName("title")[0];eT&&(eK.zarazData.t=eL.getElementsByTagName("title")[0].text);eK.zarazData.x=Math.random();eK.zarazData.w=eK.screen.width;eK.zarazData.h=eK.screen.height;eK.zarazData.j=eK.innerHeight;eK.zarazData.e=eK.innerWidth;eK.zarazData.l=eK.location.href;eK.zarazData.r=eL.referrer;eK.zarazData.k=eK.screen.colorDepth;eK.zarazData.n=eL.characterSet;eK.zarazData.o=(new Date).getTimezoneOffset();if(eK.dataLayer)for(const eX of Object.entries(Object.entries(dataLayer).reduce(((eY,eZ)=>({...eY[1],...eZ[1]})))))zaraz.set(eX[0],eX[1],{scope:"page"});eK.zarazData.q=[];for(;eK.zaraz.q.length;){const e_=eK.zaraz.q.shift();eK.zarazData.q.push(e_)}eS.defer=!0;for(const fa of[localStorage,sessionStorage])Object.keys(fa||{}).filter((fc=>fc.startsWith("_zaraz_"))).forEach((fb=>{try{eK.zarazData["z_"+fb.slice(7)]=JSON.parse(fa.getItem(fb))}catch{eK.zarazData["z_"+fb.slice(7)]=fa.getItem(fb)}}));eS.referrerPolicy="origin";eS.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(eK.zarazData)));eR.parentNode.insertBefore(eS,eR)};["complete","interactive"].includes(eL.readyState)?zaraz.init():eK.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,0,"script");})(window,document);
+    </script>
+</head>
+<body>
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center mb-5">
+                <h2 class="heading-section">Voter Registration</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                <div class="wrap d-md-flex">
+                    <div class="img" style="background-image: url(static/images/pin.png);">
+                    </div>
+                    <div class="login-wrap p-4 p-md-5">
+                        <div class="d-flex">
+                            <div class="w-100">
+                            </div>
+                            <div class="w-100">
+                                <p class="social-media d-flex justify-content-end">
+                                    <a href="#"
+                                       class="social-icon d-flex align-items-center justify-content-center"><span
+                                            class="fa fa-facebook"></span></a>
+                                    <a href="#"
+                                       class="social-icon d-flex align-items-center justify-content-center"><span
+                                            class="fa fa-twitter"></span></a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <form id="form1" name="form1" method="post" action="/Admin">
+                            <div align="center"><h2><strong>Voter Registration</strong></h2></div>
+                            <table width="35%" border="0" align="center">
+
+                                <tr>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td width="45%" height="48">Voter Id</td>
+                                    <td width="55%"><input name="name" type="text" id="name" required
+                                                           pattern="[0-9]{3,32}"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="48">Name</td>
+                                    <td><input name="ename" type="text" id="ename" required/></td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td height="48">Email</td>
+                                        <td><input name="email" type="email" id="email" required/></td>
+                                    </tr>
+
+
+
+                                <tr>
+                                    <td height="72">&nbsp;</td>
+                                    <td><input name="btn" type="submit" id="btn" value="Submit"/>
+                                        <input type="reset" name="Submit2" value="Reset"/></td>
+                                </tr>
+                            </table>
+                        </form>
+
+</body>
+</html>

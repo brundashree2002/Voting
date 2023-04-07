@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    div.a {
+            text-align:center;
+            margin: auto;
+            width: 64%;
+            padding: 200px;
+    }
+body {
+  background-image: url('static/images/log.jpg');
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+</style>
+<body>
+    <div class="a">
+         <form id="form1" name="form1" method="post" action="/face">
+	   <div align="center" ><h2>  <strong> Voter Login </strong>  </h2> </div>
+              <table width="35%" border="0" align="center">
+
+    <tr>
+          <td></td>
+    </tr>
+    <tr>
+        <td width="45%" height="48"><h2><b>Voter Id</b></h2></td>
+      <td width="70%"><input name="card" type="text" id="card" placeholder="Enter your ID" style="height:28px;font-size:14pt;" required pattern="[0-9]{3,32}"/>
+      </td>
+    </tr>
+
+	<tr>
+      <td height="72">&nbsp;</td>
+      <td><input name="btn" type="submit" id="btn" style="height:28px;" value="Submit" />
+      <input type="reset" name="Submit2" value="Reset" /></td>
+    </tr>
+  </table>
+            </form>
+    </div>
+</body>
+</html>
